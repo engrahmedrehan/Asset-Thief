@@ -1,0 +1,28 @@
+body {
+  width: 280px;
+  background-color: #0d0d0d;
+  color: #ff003c;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  padding: 15px;
+  margin: 0;
+}
+h2 { border-bottom: 1px solid #ff003c; padding-bottom: 5px; margin-top: 0;}
+#stats { background: #1a1a1a; padding: 10px; margin-bottom: 10px; border: 1px dashed #ff003c; }
+p { margin: 5px 0; font-size: 14px; }
+.idle { color: #888; }
+.active { color: #39FF14; animation: blink 1s infinite; }
+button {
+  width: 100%;
+  background: #000;
+  color: #ff003c;
+  border: 1px solid #ff003c;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+button:hover { background: #ff003c; color: #000; }
+button:disabled { border-color: #555; color: #555; cursor: not-allowed; background: #000; }
+@keyframes blink { 50% { opacity: 0.5; } }
