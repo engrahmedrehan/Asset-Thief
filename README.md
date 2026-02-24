@@ -24,10 +24,18 @@ Since this extension is in development, you can load it locally:
 4. Select the assets you need and use the download feature to save them.
 
 ## 🏗 Project Structure
-- `manifest.json`: Extension metadata and permission configuration.
-- `background.js`: Service worker managing background processes and tab communication.
-- `popup.html` / `popup.js`: The user interface for asset previews and interaction logic.
-- `data/icons/`: Branding assets for the extension interface.
+├── data/
 
-## 📄 License
-[Insert your preferred license, e.g., MIT]
+│   ├── icons/          # Extension branding and toolbar icons
+
+│   └── lib/            # Third-party libraries (e.g., jQuery, Bootstrap)
+
+├── background.js       # Service worker for lifecycle & tab communication
+
+├── content.js          # Script for DOM interaction and asset detection
+
+├── popup.html          # Main user interface for the extension popup
+
+├── popup.js            # Logic for asset previews and download actions
+
+└── manifest.json       # Extension metadata and permissions (MV3)
